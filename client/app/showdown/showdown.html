@@ -1,0 +1,52 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+
+<div ng-app="snckcoApp"  ng-controller="ShowdownCtrl">
+    
+
+        
+        
+        
+        <div>
+        selected: {{continent}} count: {{count}}
+		
+        </div>
+          
+                <my-continent continent-id="1" showdowns="{{showdowns[0]}}" target="continent">
+                
+                </my-continent>
+               
+                        
+                <my-continent continent-id="2" showdowns="{{showdowns[1]}}"  target="continent" ></my-continent>
+            
+         
+                <my-continent continent-id="3" showdowns="{{showdowns[2]}}" target="continent"></my-continent>
+            
+      
+                <my-continent continent-id="4"  showdowns="{{showdowns[3]}}" target="continent"></my-continent>
+           
+        
+            <div class ="voteButton">
+                
+                <button ng-click="apply()"style="
+                    height: 100px; 
+                    width:150px;
+                    background-color: #85B4FF;
+                    color: white;
+                    font-family: 'Lobster Two', cursive;
+                    font-size: 3em;
+                    border-radius: 8px;">
+                   
+                    <strong>
+                        Vote!
+                    </strong>
+                </button>
+
+
+              
+               
+            </div>
+
+ 
+    </div>
+

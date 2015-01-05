@@ -1,0 +1,116 @@
+html, body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #FFFFFF;
+  font: normal 16px/24px 'Helvetica Neue', Helvetica, Arial, freesans, sans-serif; text-align: center;}
+
+button, input, code {
+  display: inline-block;
+  outline: none;
+  font: inherit;
+  border: none;
+  background: #FDE991;
+  padding: 0; }
+
+button {
+  color: #C7433E;
+  background-color: white;
+  cursor: pointer; 
+  height: 70px;
+  margin-bottom: 5px;
+  position: relative;
+  vertical-align: bottom;
+  }
+
+input {
+  width: 50px; }
+
+#moreLike {
+  color: #67cf6b;
+  font-size: 2em;
+  margin-top: 75px;
+}
+
+#lessLike {
+  margin-top: 25px;
+  color: #F2728C;
+  font-size: 2em;
+}
+
+#viewport {
+  width: 500px;
+  height: 500px;
+  background-image: url('./../../assets/images/vending.jpg');
+  background-position: center;
+  border: 10px solid #85B4FF;
+  border-radius: 10px;
+  margin: 1000px auto 0;
+  margin-top: 25px;
+  overflow: hidden;
+  position: relative; }
+ 
+  #viewport .stack {
+ 
+    position: absolute;
+    top: 0px;
+    left: -35px;
+    margin-left: -100px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+
+     }
+  
+  #viewport .card {
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    position: absolute;
+    left: 150px;
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+    cursor: default; 
+    font-size: 1.5em;
+    color: #85B4FF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform-origin: right center;
+  }
+
+#viewport .stack {
+  -webkit-perspective: 800;
+}
+
+#viewport .stack .card.flipped {
+  -webkit-transform: translateX(-100%) rotateY(-180deg);
+}
+#viewport .stack .card {
+
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+
+}
+#viewport .stack .card .face {
+
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+    font-family: Georgia;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 100px;
+}
+#viewport .stack .card .front {
+  position: absolute;
+  z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: white;
+}
+#viewport .stack .card .back {
+  -webkit-transform: rotateY(-180deg);
+    cursor: pointer;
+    background-color: white;
+}

@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt@0.3.',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'grunt@0.3.', null ]
+6 verbose cache add name=undefined spec="grunt@0.3." args=["grunt@0.3.",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'grunt@0.3.',
+7 verbose parsed url   path: 'grunt@0.3.',
+7 verbose parsed url   href: 'grunt@0.3.' }
+8 verbose cache add name="grunt" spec="0.3." args=["grunt","0.3."]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '0.3.',
+9 verbose parsed url   path: '0.3.',
+9 verbose parsed url   href: '0.3.' }
+10 verbose addNamed [ 'grunt', '0.3.' ]
+11 verbose addNamed [ null, null ]
+12 silly lockFile 42d2cdff-grunt-0-3 grunt@0.3.
+13 verbose lock grunt@0.3. /Users/davidbiga/.npm/42d2cdff-grunt-0-3.lock
+14 info addNameTag [ 'grunt', '0.3.' ]
+15 verbose request where is /grunt
+16 verbose request registry https://registry.npmjs.org/
+17 verbose request id 1251ffc8068db2ee
+18 verbose url raw /grunt
+19 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+20 verbose url resolved https://registry.npmjs.org/grunt
+21 verbose request where is https://registry.npmjs.org/grunt
+22 info trying registry request attempt 1 at 17:38:32
+23 verbose etag "ESTXO1LSJJJRXE42OOVKZ0RP0"
+24 http GET https://registry.npmjs.org/grunt
+25 http 304 https://registry.npmjs.org/grunt
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Sun, 21 Dec 2014 23:38:33 GMT',
+26 silly registry.get     server: 'Apache',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'last-modified': 'Sun, 21 Dec 2014 23:38:33 GMT',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     etag: '"ESTXO1LSJJJRXE42OOVKZ0RP0"',
+26 silly registry.get     age: '15',
+26 silly registry.get     'x-served-by': 'cache-ord1722-ORD',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1419205113.264300,VS0,VE0',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'content-length': '0',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 verbose etag https://registry.npmjs.org/grunt from cache
+28 silly lockFile 42d2cdff-grunt-0-3 grunt@0.3.
+29 silly lockFile 42d2cdff-grunt-0-3 grunt@0.3.
+30 error notarget No compatible version found: grunt@'0.3.'
+30 error notarget Valid install targets:
+30 error notarget ["0.1.0","0.1.1","0.1.2","0.2.0","0.2.1","0.2.2","0.2.3","0.2.4","0.2.5","0.2.6","0.2.7","0.2.8","0.2.9","0.2.10","0.2.11","0.2.12","0.2.13","0.2.14","0.2.15","0.3.0","0.3.1","0.3.2","0.3.3","0.3.4","0.3.5","0.3.6","0.3.7","0.3.8","0.3.9","0.3.10","0.3.11","0.3.12","0.3.13","0.3.14","0.3.15","0.3.16","0.3.17","0.4.0","0.4.1","0.4.2","0.4.3","0.4.4","0.4.5","0.3.13-a","0.4.0-a","0.4.0-rc1","0.4.0-rc2","0.4.0-rc3","0.4.0-rc4","0.4.0-rc5","0.4.0-rc6","0.4.0-rc7","0.4.0-rc8"]
+30 error notarget
+30 error notarget This is most likely not a problem with npm itself.
+30 error notarget In most cases you or one of your dependencies are requesting
+30 error notarget a package version that doesn't exist.
+31 error System Darwin 14.0.0
+32 error command "node" "/usr/local/bin/npm" "install" "grunt@0.3." "--save-dev"
+33 error cwd /Users/davidbiga/Documents/webDev/nwcscomputerservice.com/local/nick-snackco/snckco
+34 error node -v v0.10.32
+35 error npm -v 1.4.28
+36 error code ETARGET
+37 verbose exit [ 1, true ]
